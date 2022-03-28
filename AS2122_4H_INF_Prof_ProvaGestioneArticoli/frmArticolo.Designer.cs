@@ -41,63 +41,70 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
             // 
             // cmbUnitaMisura
             // 
+            this.cmbUnitaMisura.AutoCompleteCustomSource.AddRange(new string[] {
+            "KG",
+            "T"});
             this.cmbUnitaMisura.FormattingEnabled = true;
             this.cmbUnitaMisura.Items.AddRange(new object[] {
             "NR",
             "KG",
             "Q",
             "T"});
-            this.cmbUnitaMisura.Location = new System.Drawing.Point(190, 78);
+            this.cmbUnitaMisura.Location = new System.Drawing.Point(166, 58);
+            this.cmbUnitaMisura.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbUnitaMisura.Name = "cmbUnitaMisura";
-            this.cmbUnitaMisura.Size = new System.Drawing.Size(68, 28);
+            this.cmbUnitaMisura.Size = new System.Drawing.Size(60, 23);
             this.cmbUnitaMisura.TabIndex = 2;
             // 
             // txtPrezzo
             // 
-            this.txtPrezzo.Location = new System.Drawing.Point(190, 120);
+            this.txtPrezzo.Location = new System.Drawing.Point(166, 90);
+            this.txtPrezzo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrezzo.Name = "txtPrezzo";
-            this.txtPrezzo.Size = new System.Drawing.Size(147, 27);
+            this.txtPrezzo.Size = new System.Drawing.Size(129, 23);
             this.txtPrezzo.TabIndex = 3;
             // 
             // txtDescrizione
             // 
-            this.txtDescrizione.Location = new System.Drawing.Point(190, 36);
+            this.txtDescrizione.Location = new System.Drawing.Point(166, 27);
+            this.txtDescrizione.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDescrizione.Name = "txtDescrizione";
-            this.txtDescrizione.Size = new System.Drawing.Size(256, 27);
+            this.txtDescrizione.Size = new System.Drawing.Size(224, 23);
             this.txtDescrizione.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(55, 39);
+            this.label1.Location = new System.Drawing.Point(48, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 20);
+            this.label1.Size = new System.Drawing.Size(67, 15);
             this.label1.TabIndex = 7;
             this.label1.Text = "Descrizione";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(55, 120);
+            this.label3.Location = new System.Drawing.Point(48, 90);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 20);
+            this.label3.Size = new System.Drawing.Size(41, 15);
             this.label3.TabIndex = 8;
             this.label3.Text = "Prezzo";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(55, 81);
+            this.label2.Location = new System.Drawing.Point(48, 61);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 20);
+            this.label2.Size = new System.Drawing.Size(87, 15);
             this.label2.TabIndex = 9;
             this.label2.Text = "Unità di misura";
             // 
             // btnSalva
             // 
-            this.btnSalva.Location = new System.Drawing.Point(109, 178);
+            this.btnSalva.Location = new System.Drawing.Point(95, 134);
+            this.btnSalva.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSalva.Name = "btnSalva";
-            this.btnSalva.Size = new System.Drawing.Size(126, 46);
+            this.btnSalva.Size = new System.Drawing.Size(110, 34);
             this.btnSalva.TabIndex = 13;
             this.btnSalva.Text = "Salva";
             this.btnSalva.UseVisualStyleBackColor = true;
@@ -105,9 +112,10 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
             // 
             // btnAnnulla
             // 
-            this.btnAnnulla.Location = new System.Drawing.Point(342, 178);
+            this.btnAnnulla.Location = new System.Drawing.Point(299, 134);
+            this.btnAnnulla.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAnnulla.Name = "btnAnnulla";
-            this.btnAnnulla.Size = new System.Drawing.Size(126, 46);
+            this.btnAnnulla.Size = new System.Drawing.Size(110, 34);
             this.btnAnnulla.TabIndex = 13;
             this.btnAnnulla.Text = "Annulla";
             this.btnAnnulla.UseVisualStyleBackColor = true;
@@ -115,9 +123,9 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
             // 
             // frmArticolo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(581, 251);
+            this.ClientSize = new System.Drawing.Size(508, 188);
             this.Controls.Add(this.btnAnnulla);
             this.Controls.Add(this.btnSalva);
             this.Controls.Add(this.cmbUnitaMisura);
@@ -126,6 +134,7 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmArticolo";
             this.Text = "Dettagli articolo";
             this.ResumeLayout(false);

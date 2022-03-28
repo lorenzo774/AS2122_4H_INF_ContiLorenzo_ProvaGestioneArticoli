@@ -19,7 +19,6 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
         private string unitaMisura;
         private string descrizione;
         private double prezzo;
-        private int codice;
 
         public DialogResult Status { get { return status; } }
 
@@ -28,7 +27,6 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
         public string UnitaMisura { get { return unitaMisura; } }
         public string Descrizione { get { return descrizione; } }
         public double Prezzo { get { return prezzo; } }
-        public int Codice { get { return codice; } }
 
         public frmArticolo()
         {
@@ -39,7 +37,9 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
         {
             // TODO: (7) passaggio all' attributo/property dei dati inseriti nella frmArticoli con controllo di valorizzazione del dato
             // ... descrizione, unitaMisura, prezzo
-            //descrizione = txtDescrizione.Text;
+            descrizione = txtDescrizione.Text;
+            prezzo = double.Parse(txtPrezzo.Text);
+            unitaMisura = cmbUnitaMisura.SelectedItem.ToString();
 
             status = DialogResult.OK;
             Close();
