@@ -34,7 +34,8 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
                 // aggiungi l'articolo all'elenco di articoli
                 // TODO: (1) aggiungere l'articolo creato dai dati di frmArticoli nella lista articoli
                 // ...
-                articoli.Add(new Articolo(articoli.Count, f.Descrizione, f.UnitaMisura, f.Prezzo));
+                var nuovoArticolo = new Articolo(articoli.Count, f.Descrizione, f.UnitaMisura, f.Prezzo);
+                articoli.Add(nuovoArticolo);
 
                 lblArticoliInseriti.Text = $"Articoli ({articoli.Count})";
             }
@@ -66,7 +67,6 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
             lblDescrizione.Text = curItem.Descrizione;
             lblPrezzo.Text = curItem.Prezzo.ToString();
             lblUnitaMisura.Text = curItem.UnitaMisura;
-            lblArticoliInseriti.Text = articoli.Count.ToString();
         }
     }
 }
