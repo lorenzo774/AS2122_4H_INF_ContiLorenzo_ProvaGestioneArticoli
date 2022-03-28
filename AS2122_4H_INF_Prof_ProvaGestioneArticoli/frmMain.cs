@@ -20,6 +20,7 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
 
             // TODO: (4) creazione lista articoli
             // ...
+            articoli = new List<Articolo>();
         }
 
         private void btnAggiungiArticolo_Click(object sender, EventArgs e)
@@ -63,6 +64,12 @@ namespace AS2122_4H_INF_Prof_ProvaGestioneArticoli
 
             // TODO: (3) aggiungere visualizzazione dettaglio articolo nelle label
             // ... lblDescrizione.Text = articoli[index].Descrizione;
+            var articolo = articoli[index];
+
+            lblDescrizione.Text = articolo.Descrizione;
+            lblPrezzo.Text = articolo.Prezzo.ToString();
+            lblUnitaMisura.Text = articolo.UnitaMisura;
+            lblArticoliInseriti.Text = articoli.Count;
         }
     }
 }
